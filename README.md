@@ -9,7 +9,7 @@ The list is verbatim from the AWS [Reserved words in DynamoDB](https://docs.aws.
 ## Install
 
 ```sh
-npm install dynamodb-reserved-words
+npm install @dynotable/dynamodb-reserved-words
 ```
 
 ESM and CJS, browser-safe.
@@ -17,7 +17,7 @@ ESM and CJS, browser-safe.
 ## Thirty seconds
 
 ```ts
-import {checkNames, expressionAttributeNames} from 'dynamodb-reserved-words';
+import {checkNames, expressionAttributeNames} from '@dynotable/dynamodb-reserved-words';
 
 const checks = checkNames(['userId', 'status', 'name']);
 // [
@@ -31,7 +31,7 @@ expressionAttributeNames(checks);
 ```
 
 ```ts
-import {isReserved} from 'dynamodb-reserved-words';
+import {isReserved} from '@dynotable/dynamodb-reserved-words';
 
 isReserved('status'); // true (case-insensitive)
 isReserved('userId'); // false

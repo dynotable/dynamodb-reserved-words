@@ -1,5 +1,5 @@
 {
-  "name": "dynamodb-reserved-words",
+  "name": "@dynotable/dynamodb-reserved-words",
   "version": "0.1.0",
   "description": "The complete list of 573 DynamoDB reserved words, with helpers to check attribute names and generate ExpressionAttributeNames aliases. Zero dependencies.",
   "keywords": [
